@@ -1,0 +1,27 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.menu {
+padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #4a94c8 ;
+  border-top: 2px solid #4a94c8 ;
+}
+a {
+  text-align:center;
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+}
+a:hover {
+  border-bottom: 2px solid #4a94c8 ;
+}
+.page-links {
+  margin-left: 35%;
+}
