@@ -7,22 +7,26 @@ import { CcbComponent } from './ccb/ccb.component';
 import { MenuComponent } from './menu/menu.component';
 import { MatIconModule,
   MatToolbarModule,
-  MatButtonModule
+  MatButtonModule,
+  MatCardModule
 } from '@angular/material';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { HomePageComponent } from './home-page/home-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     CcbComponent,
     MenuComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

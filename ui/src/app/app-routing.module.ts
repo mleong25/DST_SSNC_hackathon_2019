@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CcbComponent} from './ccb/ccb.component';
 import { AboutUsComponent} from './about-us/about-us.component';
+import { HomePageComponent } from './home-page/home-page.component';
 import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
-  { path: 'ccb', component: CcbComponent },
+  { path: 'troubleshoot', component: CcbComponent },
   { path: 'about-the-team', component: AboutUsComponent },
-  { path: '', component: CcbComponent}
+  { path: 'home-page', component: HomePageComponent },
+  { path: '', component: HomePageComponent}
 ];
 
 @NgModule({
