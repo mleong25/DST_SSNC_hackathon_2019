@@ -11,14 +11,13 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   background-color: white;
-  border-right: 1px solid #0a85c7;
   border-bottom: 3px solid #0a85c7;
 }
 a {
   text-align:center;
   text-decoration: none;
   color: black;
-  margin: 15px;
+  margin: 13px;
 }
 a:hover {
   border-bottom: 2px solid #0a85c7;
