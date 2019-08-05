@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { CCLogoComponent } from './cc-logo.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CcbComponent } from './ccb/ccb.component';
@@ -18,7 +18,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     CcbComponent,
     MenuComponent,
     AboutUsComponent,
-    HomePageComponent
+    HomePageComponent,
+    CCLogoComponent
   ],
   imports: [
     BrowserModule,
