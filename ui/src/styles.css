@@ -2,12 +2,11 @@
 
 .form-card {
   width: 70%;
-  margin-left: 15%;
+  margin-left: 12.5%;
   margin-top: 50px;
   border-right: 3px solid #0a85c7;
   border-bottom: 3px solid #0a85c7;
 }
-
 a {
   text-align:center;
   text-decoration: none;
@@ -16,4 +15,10 @@ a {
 }
 a:hover {
   border-bottom: 2px solid #0a85c7;
+}
+.basic-card {
+  margin-top: 4%;
+  text-align: center;
+  width: 70%;
+  margin-left: 12.5%;
 }
