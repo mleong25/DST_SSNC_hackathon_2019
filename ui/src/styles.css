@@ -24,3 +24,15 @@ a:hover {
 .basic-card:hover {
   border-bottom: 2.5px solid rgba(10,133,199,0.5);
 }
+.mat-card-title {
+  font-size: 20px;
+}
+
+.mat-card-subtitle {
+  font-size: 18px;
+}
+
+p, li, ul {
+  font-size: 16px;
+}
+
