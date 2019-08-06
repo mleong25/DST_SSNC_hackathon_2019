@@ -19,7 +19,7 @@ a:hover {
 .basic-card {
   margin-top: 2%;
   width: 70%;
-  margin-left: 12.5%;
+  margin-left: 15%;
 }
 .basic-card:hover {
   border-bottom: 2.5px solid rgba(10,133,199,0.5);
