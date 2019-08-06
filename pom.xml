@@ -50,7 +50,13 @@
             </plugin>
         </plugins>
     </build>
+    <!-- https://mvnrepository.com/artifact/com.mashape.unirest/unirest-java -->
     <dependencies>
+        <dependency>
+            <groupId>com.mashape.unirest</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>1.4.9</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
