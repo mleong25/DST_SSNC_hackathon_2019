@@ -1,12 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CCLogoComponent } from './cc-logo.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CcbComponent } from './ccb/ccb.component';
 import { MenuComponent } from './menu/menu.component';
-import { MatIconModule,
-  MatToolbarModule,
+import { CommandsComponent } from './commands/commands.component';
+import { ResponseComponent } from './commands/response/response.component';
+import { RequestComponent } from './commands/request/request.component';
+import { CommandInfoComponent } from './commands/command-info/command-info.component';
+import { ArgumentComponent } from './commands/argument/argument.component';
+import { MatIconModule, MatTabsModule, MatSelectModule, MatCheckboxModule,
+  MatToolbarModule,MatFormFieldModule,MatInputModule,
   MatButtonModule,
   MatCardModule
 } from '@angular/material';
@@ -19,15 +26,23 @@ import { HomePageComponent } from './home-page/home-page.component';
     MenuComponent,
     AboutUsComponent,
     HomePageComponent,
-    CCLogoComponent
+    CCLogoComponent,
+    CommandsComponent,
+    ResponseComponent,
+    RequestComponent,
+    CommandInfoComponent,
+    ArgumentComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    BrowserModule,BrowserAnimationsModule,
+    AppRoutingModule,ReactiveFormsModule, FormsModule,
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatTabsModule,MatInputModule,
+    MatSelectModule,MatFormFieldModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,14 @@
+p {
+  margin-top: 10px;
+}
+
+.command-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  padding-bottom: 0;
+}
+
+.mat-form-field {
+  padding-bottom: 8px;
+}

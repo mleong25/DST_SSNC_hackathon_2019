@@ -1,0 +1,32 @@
+<div class="form-card">
+  <mat-tab-group [dynamicHeight]="true" class="mat-elevation-z2" (selectedTabChange)="selectTab($event)" [formGroup]="commandsForm" *ngIf="commandsForm" [(selectedIndex)]="tabsIndex">
+    <mat-tab formArrayName="commands" *ngFor="let command of commandsForm.get('commands').controls; let i = index" [label]="command.controls.name.value">
+      <div class="command-body padded">
+        <app-command-info [command]="command" *ngIf="command.name !== '+'">
+        </app-command-info>
+        <app-command-info [command]="command" *ngIf="command.name === '+'">
+        </app-command-info>
+        <hr>
+        <app-argument [command]="command" (newArgument)="addArgument(i)">
+        </app-argument>
+        <hr>
+        <app-request [command]="command" (newRequest)="addRequest(i)">
+        </app-request>
+        <hr>
+        <app-response [command]="command">
+        </app-response>
+        <button mat-mini-fab color="primary" class="remove-button" (click)="removeCommand()">X</button>
+      </div>
+    </mat-tab>
+    <mat-tab label="+" *ngIf="!commandsForm.get('commands').controls.length">
+      <div class="create-container">
+        <div class="padded">
+          This bot has no commands.
+        </div>
+        <button color="primary" mat-raised-button (click)="addFirstCommand()" *ngIf="!commands.length">
+          Create New
+        </button>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

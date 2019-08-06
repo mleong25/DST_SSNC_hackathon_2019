@@ -1,0 +1,44 @@
+.argument-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.argument {
+  overflow: hidden;
+  position: relative;
+  width: 180px;
+  height: auto;
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  flex-direction: column;
+}
+
+.argument-add {
+  position: relative;
+  width: 180px;
+  min-height: 171px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-button.delete-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  padding: 0;
+  min-width: 36px;
+}
+
+.mat-form-field {
+  padding-bottom: 8px;
+}

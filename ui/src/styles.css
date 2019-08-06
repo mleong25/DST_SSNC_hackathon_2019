@@ -2,7 +2,7 @@
 
 .form-card {
   width: 70%;
-  margin-left: 12.5%;
+  margin-left: 15%;
   margin-top: 40px;
   border-right: 3px solid #0a85c7;
   border-bottom: 3px solid #0a85c7;
@@ -34,5 +34,19 @@ a:hover {
 
 p, li, ul {
   font-size: 16px;
+}
+.padded {
+  padding: 16px;
+}
+
+.margin {
+  margin: 16px;
+}
+
+.mat-tab-group > .mat-tab-body-wrapper {
+  background-color: #f8f8f8;
+}
+* {
+  font-family: Roboto;
 }
 

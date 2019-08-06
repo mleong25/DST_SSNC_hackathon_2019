@@ -1,0 +1,12 @@
+<p>
+  Command Info:
+</p>
+<div [formGroup]="commandInfoForm" class="padded command-form">
+  <mat-form-field>
+    <input matInput required placeholder="Name" formControlName="name">
+    <mat-error> {{getErrorMessage()}} </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput cdkTextareaAutosize placeholder="Description" formControlName="desc"></textarea>
+  </mat-form-field>
+</div>

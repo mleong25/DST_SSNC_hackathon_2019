@@ -1,0 +1,33 @@
+<p>
+	HTTP Requests:
+</p>
+<div class="request-container" [formGroup]="commandForm">
+	<div class="no-margin-top request margin padded mat-elevation-z3" formArrayName="requests" *ngFor="let request of commandForm.get('requests').controls; let i = index">
+		<div [formGroupName]='i'>
+			<mat-form-field>
+				<input matInput formControlName="name" placeholder="Name" required>
+        <mat-error> {{getErrorMessage(i, "name")}} </mat-error>
+      </mat-form-field>
+      <mat-form-field> 
+        <input matInput formControlName="url" placeholder="URL" required>
+        <mat-error> {{getErrorMessage(i, "url")}} </mat-error>
+      </mat-form-field>
+      <mat-form-field> 
+        <mat-label>Type</mat-label>
+        <mat-select formControlName="method" [(value)]="request.method" (selectionChange)="canHaveBody($event, request)">
+          <mat-option *ngFor="let reqType of requestTypes; let j = index" [value]="j">
+            {{reqType}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field> 
+        <input matInput formControlName="body" placeholder="Body">
+        <mat-error> {{getErrorMessage(i, "body")}} </mat-error>
+      </mat-form-field>
+    </div>
+    <button mat-button class="delete-button" (click) = "removeRequest(i)"> x </button>
+  </div>
+  <div class="no-margin-top request-add margin padded mat-elevation-z4">
+    <button class="make-request" mat-mini-fab (click)="addRequest()">+</button>
+  </div>
+</div>
